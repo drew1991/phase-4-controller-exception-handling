@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :birds
-  patch "/birds/:id/like", to: "birds#increment_likes"
+  resources :posts
+  resources :authors, only: [:show, :create]
 end

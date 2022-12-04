@@ -1,8 +1,9 @@
-puts '🦩 Seeding birds...'
+Author.create!(
+  name: "Ada Lovelace", email: "ada@the-history-of-programming.com"
+)
 
-Bird.create!(name: 'Black-Capped Chickadee', species: 'Poecile Atricapillus')
-Bird.create!(name: 'Grackle', species: 'Quiscalus Quiscula')
-Bird.create!(name: 'Common Starling', species: 'Sturnus Vulgaris')
-Bird.create!(name: 'Mourning Dove', species: 'Zenaida Macroura')
-
-puts '✅ Done seeding!'
+Post.create!(
+  title: "How to Invent Computer Science",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, nulla vel condimentum ornare, arcu lorem hendrerit purus, ac sagittis ipsum nisl nec erat. Morbi porta sollicitudin leo, eu cursus libero posuere ac. Sed ac ultricies ante. Donec nec nulla ipsum. Nunc eleifend, ligula ut volutpat.",
+  category: "Non-Fiction"
+)
